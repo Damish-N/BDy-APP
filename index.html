@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Rumesha 💖</title>
+  <meta name="description" content="A little something for my love on her birthday." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating hearts background -->
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <!-- ========== INTRO: tap-to-open envelope ========== -->
+  <section class="intro" id="intro">
+    <p class="intro-small">Someone made something for you…</p>
+    <button class="envelope" id="openBtn" aria-label="Open your surprise">
+      <span class="env-back"></span>
+      <span class="env-letter">
+        <span class="env-letter-text">For you, my love</span>
+      </span>
+      <span class="env-front"></span>
+      <span class="env-flap"></span>
+      <span class="env-seal">💌</span>
+    </button>
+    <p class="intro-hint">Tap the envelope to open</p>
+  </section>
+
+  <!-- ========== MAIN PAGE ========== -->
+  <main class="main" id="main" hidden>
+
+    <!-- Hero -->
+    <header class="hero">
+      <p class="hero-top">21 · October</p>
+      <h1 class="hero-title">Happy Birthday</h1>
+      <h2 class="hero-name">Rumesha Chathumini</h2>
+      <p class="hero-sub">To the most beautiful soul I know 💖</p>
+
+      <!-- Countdown (shown only before the 28th) -->
+      <div class="countdown" id="countdown" hidden>
+        <p class="countdown-label">Your day arrives in</p>
+        <div class="countdown-grid">
+          <div><span id="cd-days">0</span><small>days</small></div>
+          <div><span id="cd-hours">0</span><small>hours</small></div>
+          <div><span id="cd-mins">0</span><small>mins</small></div>
+          <div><span id="cd-secs">0</span><small>secs</small></div>
+        </div>
+      </div>
+
+      <a href="#video" class="scroll-down">Your surprise ↓</a>
+    </header>
+
+    <!-- Video -->
+    <section class="card video-card" id="video">
+      <h3 class="section-title">A little something I made for you</h3>
+      <div class="video-frame">
+        <!-- Put your video file next to index.html and name it video.mp4 -->
+        <video id="bdayVideo" controls playsinline preload="metadata" poster="">
+          <source src="original.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Love letter -->
+    <section class="card letter">
+      <h3 class="section-title">My letter to you</h3>
+      <div class="letter-body">
+        <p>My dearest Rumesha,</p>
+        <!-- ✏️ Replace these lines with your own words -->
+        <p>Happy birthday to the girl who makes every ordinary day feel special. Thank you for your smile, your patience, and all the love you give me without asking for anything back.</p>
+        <p>I hope this year brings you as much happiness as you bring into my life. I'll be right here, cheering for you, every single step of the way.</p>
+        <p>I love you more than words (or videos) can say.</p>
+        <p class="signature">Forever yours Future Husband</p>
+      </div>
+    </section>
+
+    <button class="celebrate-btn" id="celebrateBtn">Make a wish 🎂</button>
+
+    <footer class="footer">
+      Made with love, just for you · 21.10
+    </footer>
+  </main>
+
+  <!-- Confetti canvas -->
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
